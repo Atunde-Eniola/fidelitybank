@@ -1,0 +1,16 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu ul :hover{
+    background-color: #e5e7eb;
+}
+
+.dropdown-sub-menu{
+    background-color: #f9fafb;
+    top: 0;
+    
+}
+
+.dropdown:hover .dropdown-sub-menu{
+    display: block;
+}

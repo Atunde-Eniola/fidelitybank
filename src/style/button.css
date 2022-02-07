@@ -1,0 +1,31 @@
+.btn {
+    padding: .7rem 1.5rem;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+.btn.btn-background-slide::before{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color:#6BC048;
+    z-index: -1;
+    transform: scaleX(50%);
+    transform-origin: left;
+    border-top-left-radius: 6px ;
+    border-bottom-left-radius: 6px ;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before{
+    transform: scaleX(100%);
+    border-radius: 6px;
+}
+
+.btn.btn-background-slide{
+    z-index: 1;
+}
